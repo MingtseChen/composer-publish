@@ -1,0 +1,34 @@
+{
+  "name": "starlux/publish",
+  "type": "composer-plugin",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ming Chen",
+      "email": "mingchen@starlux-airlines.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Starlux\\Publish\\": "src"
+    }
+  },
+  "extra": {
+    "class": "Starlux\\Publish\\PublishPlugin"
+  },
+  "require": {
+    "ext-json": "*",
+    "composer-plugin-api": "^1.1",
+    "ext-curl": "*",
+    "symfony/var-dumper": "^5.0",
+    "ext-zip": "*"
+  },
+  "require-dev": {
+    "composer/composer": "^1.0"
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
